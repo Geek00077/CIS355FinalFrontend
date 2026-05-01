@@ -1,4 +1,6 @@
-fetch('/api/Slugcats')
+const API_URL = "https://cis355finalbackend.onrender.com/api";
+
+fetch(`${API_URL}/Slugcats`)
   .then(res => res.json())
   .then(data => {
     const slugCatsDiv = document.getElementById("slugCats");
